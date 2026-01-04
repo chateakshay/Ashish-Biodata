@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrimonial Biodata - Ashish Bhagwan Bhamre</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: linear-gradient(135deg, #f5f0e8 0%, #e8dfd0 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            border: 3px solid #d4af37;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #8b4513 0%, #a0522d 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 5px solid #d4af37;
+            position: relative;
+        }
+
+        .header::before {
+            content: '🕉️';
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 2em;
+            opacity: 0.5;
+        }
+
+        .header::after {
+            content: '🕉️';
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 2em;
+            opacity: 0.5;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .photo-section {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 20px;
+            background: #fafaf8;
+            flex-wrap: wrap;
+        }
+
+        .photo-frame {
+            border: 5px solid #d4af37;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            max-width: 400px;
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 25px;
+            background: #fafaf8;
+            border-left: 5px solid #d4af37;
+            border-radius: 5px;
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            color: #8b4513;
+            margin-bottom: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 10px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .info-item {
+            display: flex;
+            padding: 12px;
+            background: white;
+            border-radius: 5px;
+            border: 1px solid #e0d5c7;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: #8b4513;
+            min-width: 140px;
+            font-size: 1.05em;
+        }
+
+        .info-value {
+            color: #333;
+            flex: 1;
+        }
+
+        .hindi {
+            font-family: 'Noto Sans Devanagari', 'Mangal', sans-serif;
+            color: #666;
+            font-size: 0.95em;
+            margin-top: 3px;
+        }
+
+        .family-section {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .family-member {
+            padding: 15px;
+            margin: 10px 0;
+            background: #fafaf8;
+            border-left: 3px solid #d4af37;
+            border-radius: 3px;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #8b4513 0%, #a0522d 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            margin: 0;
+            border-radius: 0;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            background: rgba(255,255,255,0.1);
+            padding: 15px 25px;
+            border-radius: 5px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        .decorative-line {
+            height: 2px;
+            background: linear-gradient(to right, transparent, #d4af37, transparent);
+            margin: 30px 0;
+        }
+
+        .relations-list {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .photo-frame {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🕉️ विवाह बायोडाटा 🕉️</h1>
+            <p>Matrimonial Biodata</p>
+        </div>
+
+        <div class="photo-section">
+            <div class="photo-frame">
+                <img id="photo1" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect fill='%23f0e6d2' width='400' height='500'/%3E%3Ctext x='200' y='250' font-family='Arial' font-size='20' fill='%238b4513' text-anchor='middle'%3EPhoto 1%3C/text%3E%3C/svg%3E" alt="Ashish Bhamre">
+            </div>
+            <div class="photo-frame">
+                <img id="photo2" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect fill='%23f0e6d2' width='400' height='500'/%3E%3Ctext x='200' y='250' font-family='Arial' font-size='20' fill='%238b4513' text-anchor='middle'%3EPhoto 2%3C/text%3E%3C/svg%3E" alt="Ashish Bhamre">
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">व्यक्तिगत माहिती<br>Personal Details</h2>
+                
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-label">नाव / Name:</span>
+                        <span class="info-value">
+                            <strong>Ashish Bhagwan Bhamre</strong><br>
+                            <span class="hindi">चि. आशिष भगवान भामरे</span>
+                        </span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <span class="info-label">जात / Caste:</span>
+                        <span class="info-value">
+                            Hindu Maratha<br>
+                            <span class="hindi">हिंदू मराठा</span>
+                        </span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <span class="info-label">जन्म तारीख / DOB:</span>
+                        <span class="info-value">16-01-1999<br>(27 years)</span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <span class="info-label">वार / Day:</span>
+                        <span class="info-value">
+                            Saturday<br>
+                            <span class="hindi">शनिवार</span>
+                        </span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <span class="info-label">वेळ / Time:</span>
+                        <span class="info-value">
+                            5:45 AM<br>
+                            <span class="hindi">5:45 वा (सकाळी)</span>
+                        </span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <span class="info-label">कुलदैवत / Kuldevata:</span>
+                        <span class="info-value">
+                            Ekvira Devi, Dhule<br>
+                            <span class="hindi">एकविरा देवी, धुळे</span>
+                        </span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <span class="info-label">वर्ण / Complexion:</span>
+                        <span class="info-value">
+                            Fair<br>
+                            <span class="hindi">गोरा</span>
+                        </span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <span class="info-label">शिक्षण / Education:</span>
+                        <span class="info-value">
+                            <strong>B.E. Civil Engineer</strong>
+                        </span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <span class="info-label">व्यवसाय / Profession:</span>
+                        <span class="info-value">
+                            <strong>Government Contractor</strong><br>
+                            (ZP/MJP/PWD/NMC)
+                        </span>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-label">फर्म / Firm:</span>
+                        <span class="info-value">
+                            <strong>Aashish Bhamme Construction</strong><br>
+                            <span class="hindi">आशिष भामे कन्स्ट्रक्शन</span>
+                        </span>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-label">उत्पन्न / Income:</span>
+                        <span class="info-value">
+                            <strong>₹25-30 Lakhs per annum</strong><br>
+                            <span style="font-size: 0.9em;">(Minimum Annual Profit)</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="decorative-line"></div>
+
+            <div class="section">
+                <h2 class="section-title">कौटुंबिक माहिती<br>Family Details</h2>
+                
+                <div class="family-section">
+                    <div class="family-member">
+                        <div class="info-label">वडिलांचे नाव / Father's Name:</div>
+                        <div class="info-value">
+                            <strong>Shri. Bhagwan Noval Bhamre</strong><br>
+                            <span class="hindi">श्री. भगवान नवल भामरे</span>
+                        </div>
+                    </div>
+                    
+                    <div class="family-member">
+                        <div class="info-label">आईचे नाव / Mother's Name:</div>
+                        <div class="info-value">
+                            <strong>Smt. Shobha Bhagwan Bhamre</strong><br>
+                            <span class="hindi">सौ. शोभा भगवान भामरे</span>
+                        </div>
+                    </div>
+                    
+                    <div class="family-member">
+                        <div class="info-label">भाऊ / Brother:</div>
+                        <div class="info-value">
+                            <strong>Shri. Shubham Bhagwan Bhamre</strong><br>
+                            <span class="hindi">श्री. शुभम भगवान भामरे</span><br>
+                            <span style="font-size: 0.95em;">Civil Engineer - Government Contractor</span>
+                        </div>
+                    </div>
+
+                    <div class="family-member">
+                        <div class="info-label">वहिनी / Sister-in-law:</div>
+                        <div class="info-value">
+                            <strong>Smt. Lalita Shubham Bhamre</strong><br>
+                            <span class="hindi">सौ. ललिता शुभम भामरे</span><br>
+                            <span style="font-size: 0.95em;">Pharmacist (From Takrkheda)</span><br>
+                            <span class="hindi">टाकरखेडा</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="decorative-line"></div>
+
+            <div class="section">
+                <h2 class="section-title">पत्ता व मुळगाव<br>Address & Native Place</h2>
+                
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-label">पत्ता / Address:</span>
+                        <span class="info-value">
+                            <strong>Plot No. 22, Shivalaya Sadan</strong><br>
+                            Ahilyabai Shivaji Nagar, Satpur<br>
+                            Nashik - 422007<br>
+                            <span class="hindi">प्लॉट नं. 22 शिवालय सदन, अहिल्याबाई शिवाजी नगर, सातपूर, नाशिक - 422007</span>
+                        </span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <span class="info-label">मुळगाव / Native:</span>
+                        <span class="info-value">
+                            <strong>Nadse</strong><br>
+                            Ta. Sakri, Dist. Dhule<br>
+                            <span class="hindi">ता. साक्री, जि. धुळे, नाडसे ह.मु. नाशिक</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="decorative-line"></div>
+
+            <div class="section">
+                <h2 class="section-title">इतर नातेवाईक<br>Extended Family</h2>
+                
+                <div class="family-section">
+                    <div class="family-member">
+                        <div class="info-label">मामा / Maternal Uncle:</div>
+                        <div class="info-value">
+                            <strong>Shri. Sudhakar Govindrao Ahire</strong><br>
+                            <span class="hindi">श्री. सुधाकर गोविंदराव अहिरे</span><br>
+                            Nampur, Mumbai<br>
+                            <span class="hindi">नामपूर, ह.मु. मुंबई</span>
+                        </div>
+                    </div>
+                    
+                    <div class="family-member">
+                        <div class="info-label">काका / Uncle:</div>
+                        <div class="info-value">
+                            <strong>Shri. Dhanraj Noval Bhamre</strong><br>
+                            <span class="hindi">श्री. धनराज नवल भामरे</span><br>
+                            Nashik<br>
+                            <span class="hindi">ह.मु. नाशिक</span>
+                        </div>
+                    </div>
+
+                    <div class="family-member">
+                        <div class="info-label">मावसा / Maternal Aunt's Husband:</div>
+                        <div class="info-value">
+                            <strong>1. Shri. Subhash Malaji Sonwane</strong><br>
+                            <span class="hindi">श्री. सुभाष मालजी सोनवणे</span><br>
+                            Satana, Nashik<br>
+                            <span class="hindi">सटाणा, ह.मु. नाशिक</span>
+                        </div>
+                    </div>
+
+                    <div class="family-member">
+                        <div class="info-value">
+                            <strong>2. Shri. Yogesh Prabhakar Gangurde</strong><br>
+                            <span class="hindi">श्री. योगेश प्रभाकर गांगुर्डे</span><br>
+                            Pale, Nashik<br>
+                            <span class="hindi">पाळे, ह.मु. नाशिक</span>
+                        </div>
+                    </div>
+
+                    <div class="family-member">
+                        <div class="info-label">आत्या मामा / Aunt's Uncle:</div>
+                        <div class="info-value">
+                            <strong>1. Shri. Sadashiv Atmaram Borse</strong><br>
+                            <span class="hindi">श्री. सदाशिव आत्माराम बोरसे</span><br>
+                            Sarvad, Nashik<br>
+                            <span class="hindi">सरवड, ह.मु. नाशिक</span>
+                        </div>
+                    </div>
+
+                    <div class="family-member">
+                        <div class="info-value">
+                            <strong>2. Shri. Dilip Gyandev Vagh</strong><br>
+                            <span class="hindi">श्री. दिलीप ग्यान्देव वाघ</span><br>
+                            Ubhad, Nashik<br>
+                            <span class="hindi">उभंड, ह.मु. नाशिक</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="decorative-line"></div>
+
+            <div class="section">
+                <h2 class="section-title">नाते संबंध<br>Relations</h2>
+                <div class="relations-list">
+                    <strong>Surnames / आडनावे:</strong><br>
+                    पगार, बोरसे, सोनवणे, देवरे, खैरनार, दहिते, निकम, नरपंगार<br>
+                    Pagar, Borse, Sonwane, Devre, Khairnar, Dahite, Nikam, Narpangar
+                </div>
+            </div>
+
+            <div class="decorative-line"></div>
+
+            <div class="section">
+                <h2 class="section-title">संबंधित गावे<br>Connected Villages</h2>
+                <div class="relations-list">
+                    उत्तराने, पारनेर, दाभाडी, कासार, कळवण, पारोळा, संटाणा, एकलह, कुडाणे, हागणार, बासर, निळगव्हन, टाकरखेडा<br><br>
+                    Uttrane, Parner, Dabhadi, Kasar, Kalvan, Parola, Santana, Ekalah, Kudane, Haganar, Basar, Nilgavhan, Takrkheda
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-section section">
+            <h2 style="font-size: 2em; margin-bottom: 10px;">संपर्क माहिती</h2>
+            <h3 style="margin-bottom: 20px;">Contact Information</h3>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Mobile:</strong><br>
+                    <a href="tel:9623241475">9623 241 475</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Alternate:</strong><br>
+                    <a href="tel:8087032655">8087 032 655</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Note: Since we can't directly access uploaded images in artifacts,
+        // you'll need to replace these placeholder URLs with actual image URLs
+        // after uploading them to an image hosting service
+        
+        // Example of how to add your photos:
+        // document.getElementById('photo1').src = 'YOUR_IMAGE_URL_1';
+        // document.getElementById('photo2').src = 'YOUR_IMAGE_URL_2';
+    </script>
+</body>
+</html>
